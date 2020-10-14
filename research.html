@@ -68,29 +68,40 @@
       <p>My primary interest is condensed matter physics, especially strong-correlated many-body system, the theory of superconductivity, and the exploration of magnetic monopole, both the <em>real</em> one and the analogous quasi-particle, in condensed matter.</p>
       <p>Many-body theory is one of the important tools in the study of condensed matter. My undergraduate research covered classical many-body theory and chaos, quantum many-body theory and its applications in condensed matter physics and nuclear physics, computational methods such as density functional theory, and computational simulation of three-body problem. </p>
       <p>I am also in belief that many modern mathematical tools and ideas, such as non-commutative ring theory, low-dimensional topology, knot theory, and the principle of duality, can promote the study of condensed matter. This exactly matches my long-lasting enthusiasm for the <em>structure</em> and the <em>shape</em> of physics, which means, in mathematical language, algebra and geometry in relations to physics. A research project in such area is indeed required lots of advanced knowledge beyond a standard undergraduate program. Nevertheless, I prepared for it. I took the most rigorous courses in abstract algebra (group, ring, module, algebra, field and Galois, category), differential geometry, basic algebraic topology, mathematical analysis, complex analysis, and partial differential equations during my undergraduate years. </p>
+      
 
+      <p class="title">Wigner Crystal state in twisted bilayer graphene</p>
+      <p style="margin-top:14px"> <label>&nbsp Solid State Physics &nbsp</label> &nbsp&nbsp <label>&nbsp Quantum Many-Body Physics &nbsp</label> </p>
+      <p>This project is advised by <a href="https://physics.osu.edu/people/skinner.352" target="_blank">Dr. Brian Skinner</a> at the Ohio State University from January 2020 to present. </p>
+      <p> Consider a ton of electrons moving on a two-dimensional nertralizing material, or say \(\mathbb{R}\)<sup>2</sup> if you like. Due to the repulsive Coulomb interaction, these electrons, in order to minimize the electrostatic energy, will crystallize and form a lattice when the electron density is less than a critical value. The electron's state with lowest electrostatic energy is called the Wigner crystal state. It can be proved that the Wigner crystal state in two dimension is of an equilateral-triangle lattice. </p>
+      <p> A sheet of graphene consist of a single layer of carbon atoms arranged in a two-dimensional honeycomb lattice: each vertex takes the position of a single carbon atom and each edge represents either a single or a double carbon-carbon bond; two kinds of bond are symmetrically alternated. Two graphene sheet overlapped with a twisted angle is called the tisted bilayer graphene. See figures below.  </p>
+      <img src="graphene_bond.jpg" width="300" height="265"> <img src="twisted_honeycomb.png" width="225" height="225">
+      <p> This project is aim at finding the theoretical range of the electron density for the Wigner crystal state to exist on a twisted bilayer graphene. So there are three lattices on the plane. The first task is to find the average density per Wigner–Seitz cell of Wigner crystal with the assumption that the lattice is infinitely large; this is done in the reciprocal lattice space. The next task is to use Lindemann criterion to find the critical electron density which causes the Wigner crystal melts, or say the equilateral-triangle lattice breaks.   </p>
+      <p> <strong>Current Result:</strong> The project is currently under the first stage. Please check my ongoing <a href="wigner_twisted_graphene.pdf">note</a>. </p>
+      
       
       <p class="title">Becchi-Rouet-Stora-Tyutin (BRST) Theory in Density Functional</p>
       <p style="margin-top:14px"> <label>&nbsp Quantum Many-Body Physics &nbsp</label> &nbsp&nbsp <label>&nbsp Quantum Gauge Theory &nbsp</label> </p>
       <p>This project is advised by <a href="https://physics.osu.edu/people/furnstahl.1" target="_blank">Prof. Richard Furnstahl</a> at the Ohio State University from January 2020 to present. </p>
       <p>The aim of this project is to start a trial of applying BRST method to deal with the degrees of freedom in Mexican hat problem and other constrained systems. Mexican hat potential energy is a significant model in theoretical study of symmetry, largely due to its continuous family of global minima which is called the moduli field in quantum field theory. The BRST method is from the idea of quantization of gauge theory. The project requires a relatively deep physical understanding of BRST theory, including the constrained systems, ghost, and quantum gauge theory. M. Henneaux and C. Teitelboim's <em>Quantization of Gauge Systems</em> gives a good introduction of these. This project also utilizes the density functional approach of many-body system. </p>
+      <p> <strong>Current Result:</strong> I am currently at the beginnin stage of this large project. Please check my ongoing study <a href="qgt.pdf">note</a>.</p>
 	
 
       <p class="title">Mass Density and Velocity Distribution of Dark Matter Haloes</p>
-      <p style="margin-top:14px"> <label>&nbsp Computational Astrophysics &nbsp</label> </p>
+      <p style="margin-top:14px"> <label>&nbsp Computational Astrophysics &nbsp</label> &nbsp&nbsp <label>&nbsp Computational Many-Body Physics &nbsp</label> </p>
       <p>This project was advised by <a href="https://astronomy.osu.edu/people/peter.33" target="_blank">Dr. Annika Peter</a> at the Ohio State University in summer 2019 and was supported by Physics Department as 2019 Summer Undergraduate Research; scholarship $3500. </p>
       <p>The basic assumption of this research project is that dark matter (DM) is made up by a new kind of particle. Based on different types of DM particle, many theoretical models of DM are developed. The cold dark matter (CDM) is made up by the particles where the interaction between each two of them is Newtonian gravitation only; self-interacting dark matter (SIDM) is made up by the particles where the second interaction exists in addition to Newtonian gravitation. In either case, DM is believed to exist around galaxies and is thus called DM haloes; the smaller galaxies in a large galaxy are surrounded by DM subhaloes. By comparing to the observation data, the mass density distribution and velocity distribution of DM (sub)haloes can help us find and abandon incorrect theories.</p>
       <p>To do this, I need to first use our theoretical models to simulate and describe the DM haloes. The key tools I utilized are <a href="https://doi.org/10.1111/j.1365-2966.2009.15715.x" target="_blank">AREPO</a>, a massively parallel gravitation and finite-volume magnetohydrodynamics computer program coded by <a href="https://www.mpa-garching.mpg.de/person/55019/2377" target="_blank">Prof. Volker Springel</a> before 2010, and its predecessor <a href="https://doi.org/10.1111/j.1365-2966.2005.09655.x" target="_blank">GADGET-2</a>, a smoothed-particle hydrodynamics computer program coded also by Prof. Springel before 2005. I ran them on Pitzer cluster of Ohio Supercomputer Center with  <a href="https://doi.org/10.1086/177173" target="_blank">Navarro–Frenk–White profile</a> as the initial conditions. I investigated both CDM and SIDM cases by setting different values of cross section for different strengths of the second force. The outputs are HDF5 files, and I used Python3 to plot the position scenarios and further used <a href="https://doi.org/10.1088/0067-0049/182/2/608" target="_blank">Amiga's Halo Finder</a> (AHF) to analyze mass density and velocity distributions.</p>
-      <p>The results were presented as a poster at the end of the summer research program. </p>
+      <p> <strong>Result:</strong> The result was presented as a  <a href="dm_halo_density.pdf">poster</a>  at the end of the summer research program. </p>
 
       
       <p class="title">[In Class] Two- and Three-Body Problems under Newtonian Gravitation</p>
-      <p style="margin-top:14px"> <label>&nbsp Computational Mechanics &nbsp</label> </p>
+      <p style="margin-top:14px"> <label>&nbsp Computational Many-Body Physics &nbsp</label> </p>
       <p>This in-class project initially aims to fulfill the final project of Physics 6810 at the Ohio State University; the instructor is <a href="https://physics.osu.edu/people/bundschuh.2" target="_blank">Prof. Ralf Bundschuh</a>. The code uses Euler method and Runge–Kutta method to solve the equations of motion of two and three point masses under Newtonian gravitation. An error analysis and several sample plots of trajectories can be found in the documentation. </p>
       <p>I am currently switching the programming language from Python to C and rewriting the documentation.</p>
       <!--  upgrading the program dramatically: added the Leapfrog method, switched the programming language from C++ to C, and rewrote the documentation. -->
       
-      <p>The Python-language version is hosted at my GitHub repository. The C-language version is not yet available.</p>
+      <p> <strong>Current Result:</strong> The Python-language version is hosted at my GitHub repository. The C-language version is not yet available.</p>
      
       </br></br></br></br>
       
@@ -100,7 +111,7 @@
     <footer>
       <p style="font-size:18px;font-family:'RedHatText'; font-weight:bold; text-align:center">
 	Maintained by Jiasheng He <br>
-	Last Updated on 1 October 2020 <br>
+	Last Updated on 11 October 2020 <br>
 	Hosted on GitHub
       </p>
     </footer>
